@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 public class ALTester {
-  ArrayList potato = new ArrayList();
+  
   public static void main(String[] args){
+    ArrayList potato = new ArrayList();
     System.out.println(potato);
   }
 }
