@@ -2,7 +2,7 @@ import java.util.ArrayList;
 public class ALTester {
   public boolean sort(ArrayList<Integer> foo){
     for (int i = 0; i < foo.length; i++){
-      if (foo[i + 1] < foo[i]){
+      if (foo(i + 1) < foo(i)){
         return false;
       }
     }
