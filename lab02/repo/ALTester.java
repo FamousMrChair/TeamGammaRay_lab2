@@ -35,7 +35,7 @@ public static void main(String[] args){
     ALTester test = new ALTester();
     ArrayList<Integer> potato = new ArrayList<Integer>();
     System.out.println(potato);
-    for (int i = 0; i < 3; i ++){
+    for (int i = 0; i < 23; i ++){
       potato.add((int)(Math.random()*23));
     }
     System.out.println(potato);
