@@ -1,1 +1,11 @@
-
+Team GammaRay: Jun Hong Wang + Bob, Jomin Zhang + Chompsky, Kevin Xiao + Mr. Swag
+APCS pd6
+L02 -- Well AI B. Sorted
+2021-12-13
+Time Spent : 2 hours
+DISCO:
+ArrayList uses <> signs around the declared data type; Ie. <Integer>.
+You can override inherent functions in the wrapper class.
+QCC:
+Are there different ways to add values while maintaining sorted functionality?
+What does the wrapper class for arraylist do?
