@@ -13,7 +13,22 @@ public class OrderedArrayList{
     return oal.toString();
   }
   public int get(int index){
-    return oal(index);
+    return oal.get(index);
+  }
+  public int remove(int index){
+    return oal.remove(index);
+  }
+  public boolean add(int val){
+    int i = 0;
+    while (i < oal.size()){
+      if (val < oal.get(i)){
+        oal.add(i,val);
+        return true;
+      }
+      i++;
+    }
+    oal.add(val);
+    return true;
   }
 }
   
