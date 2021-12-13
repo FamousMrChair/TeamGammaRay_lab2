@@ -31,6 +31,8 @@ public class OrderedArrayList{
     oal.add(val);
     return true;
   }
+  
+/*
 
   public void addBinary(Integer val) {
     int min = 0;
@@ -50,6 +52,7 @@ public class OrderedArrayList{
     }
     oal.add(index, val);
   }
+  */
 
   public static void main(String[] args) {
     OrderedArrayList testing = new OrderedArrayList();
@@ -63,8 +66,6 @@ public class OrderedArrayList{
     testing.addLinear(3);
     testing.addLinear(1234);
     System.out.println(testing.size());
-    System.out.println(testing.toString());
-    testing.addBinary(25);
     System.out.println(testing.toString());
   }
 }
