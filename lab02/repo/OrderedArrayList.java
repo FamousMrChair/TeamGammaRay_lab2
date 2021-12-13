@@ -18,18 +18,17 @@ public class OrderedArrayList{
   public Integer remove(int index){
     return oal.remove(index);
   }
-  public boolean addLinear(Integer val){
+  public void addLinear(Integer val){
     int i = 0;
     int s = oal.size();
     while (i < s){
       if (val < oal.get(i)){
         oal.add(i,val);
-        return true;
+        break;
       }
       i++;
     }
     oal.add(val);
-    return true;
   }
   
 /*
