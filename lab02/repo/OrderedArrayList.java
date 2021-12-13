@@ -5,7 +5,7 @@ public class OrderedArrayList{
   public OrderedArrayList(){
     oal = new ArrayList<Integer>();
   }
-  
+
   public int size(){
     return oal.size();
   }
@@ -30,5 +30,18 @@ public class OrderedArrayList{
     oal.add(val);
     return true;
   }
+
+  public static void main(String[] args) {
+    OrderedArrayList testing = new OrderedArrayList();
+    System.out.println(testing.size());
+    for (int i = 0; i < 23; i++) {
+      testing.add(i);
+    }
+    //adding elements out of order, arraylist maintains order
+    System.out.println(testing.add(1));
+    System.out.println(testing.add(15));
+    System.out.println(testing.add(3));
+    System.out.println(testing.add(1234));
+    System.out.println(testing.toString());
+  }
 }
-  
