@@ -2,8 +2,8 @@ import java.util.ArrayList;
 public class ALTester {
 
   public boolean sort(ArrayList<Integer> foo){
-    for (int i = 0; i < foo.length; i++){
-      if (foo[i + 1] < foo[i]){
+    for (int i = 0; i < foo.size()-1; i++){
+      if (foo.get(i + 1) < foo.get(i)){
         return false;
       }
     }
@@ -17,7 +17,7 @@ public class ALTester {
     }
     System.out.println("Sorted:" + Sorted.size());
     for (int i = 0; i < foo.size(); i ++){
-      int minVal = foo.get(i); // This line is fucked up bro
+      int minVal = foo.get(i); 
       for (int j = 0; j < Hold.size(); j ++){
         if (Hold.get(j) < minVal){
           minVal = foo.get(j);
@@ -31,14 +31,15 @@ public class ALTester {
     System.out.println(Sorted);
     return Sorted;
   }
-  public static void main(String[] args){
+public static void main(String[] args){
+    ALTester test = new ALTester();
     ArrayList<Integer> potato = new ArrayList<Integer>();
     System.out.println(potato);
     for (int i = 0; i < 3; i ++){
       potato.add((int)(Math.random()*23));
     }
     System.out.println(potato);
-    System.out.println(arrange(potato));
+    System.out.println(test.sort(potato));
     //System.out.println(potato);
     //System.out.println(potato.size());
   }
